@@ -1,0 +1,130 @@
+/* *, *:before, *:after 
+  box-sizing: border-box
+  // body
+//   font-family: sans-serif
+//   margin: 0 */
+
+$header-bg: #fff9e6
+$circle-bg: #ffcd33
+$text-black: #000
+$button-bg: #ff591f
+$bg-color: #f5f7fa
+$r-bg-color: #ffffff
+$title-clr: #000
+$sidebar-bg: #4c6154
+$text-white: #ffffff
+$text-yellow: #feffad
+$text-grey: #777777
+$orange: #FB6D3A
+$light-gray: #c5c5c5
+
+.body
+    font-family: 'Montserrat', sans-serif
+    background-color: $light-gray
+
+.main-conteiner
+    // display: flex
+    // flex-direction: row-reverse
+    display: grid
+    grid-template-columns: 1fr 2fr
+    width: 1200px
+    background-color: $r-bg-color
+    margin: 40px auto
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1)
+
+/* Sidebar section */
+
+.sidebar-section
+    display: grid
+    grid-row-gap: 5px
+    background-color: $sidebar-bg
+    justify-content: center
+    align-items: center
+    &-img
+        width: 90%
+        margin-left: 5%
+        margin-top: 20px
+
+// contact section
+
+.contact-section
+    margin: 0 20px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 24px
+    color: $text-white
+    &-link
+        color: $text-black
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 24px
+
+.sidebar-title
+    color: $text-white
+    font-weight: bold
+    font-size: 22px
+    line-height: 27px
+
+// Tech skills sections & // Soft skills section
+
+
+.tech-skills-section, .soft-skills-section
+    margin: 0 20px
+
+.tech-skills, .soft-skills
+    &-item
+        color: $text-yellow
+        &-text
+            color: $text-white
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 24px
+            
+            
+/* Main content section */
+
+.main-content-section
+    // padding: 10px 50px
+    margin-bottom: 45px
+
+.about-me
+        font-style: normal
+        font-weight: bold
+        &-name
+            color: $text-black
+            text-align: center
+            font-size: 45px
+            line-height: 55px
+            margin-bottom: 25px
+        &-prof
+            color: $sidebar-bg
+            text-align: center
+            font-size: 24px
+            line-height: 27px
+            margin-bottom: 20px
+
+
+
+
+
+
+// .main-content-title
+//     // display: grid
+
+// .about-me-prof
+//     font-size: 20px
+//     font-weight: 700px
+//     color: $text-black
+    
+
+
+    
+    
+
+
+
+    
+@import '_media.sass'
