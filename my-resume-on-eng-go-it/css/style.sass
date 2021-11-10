@@ -19,19 +19,19 @@ $orange: #FB6D3A
 $light-gray: #c5c5c5
 $col-gr-59: #595959
 $title-bg-col1: #4c6154
-$title-bg-col2: #607769
+$title-bg-col2: #607762
 $title-bg-col3: #778f80
    
 
 .body
-    font-family: 'Montserrat', sans-serif
     background-color: $light-gray
 
 .main-conteiner
+    font-family: 'Montserrat', sans-serif
     // display: flex
     // flex-direction: row-reverse
     display: grid
-    grid-template-columns: 1fr 2fr
+    grid-template-columns: 1fr 2.5fr
     width: 1200px
     background-color: $r-bg-color
     margin: 40px auto
@@ -52,35 +52,43 @@ h4
 .sidebar-section
     display: grid
     // grid-row-gap: 5px
-    background-color: $sidebar-bg
+    background-color: $title-bg-col2
     justify-content: center
     align-items: center
     &-img
         width: 90%
         margin-left: 5%
         margin-top: 20px
+        margin-bottom: 10px
 
 // contact section
 
 .contact-section
-    margin: 0 20px
+    margin:  5px 0 0 20px
     font-style: normal
     font-weight: normal
     font-size: 18px
     line-height: 24px
     color: $text-white
+    &-type
+        margin-left: 20px
+        // margin-top: 15px
     &-link
+        margin: 5px
         color: $text-black
         font-style: normal
         font-weight: normal
         font-size: 18px
         line-height: 24px
+        text-decoration: none
+
 
 .sidebar-title
     color: $text-white
     font-weight: bold
     font-size: 22px
     line-height: 27px
+    margin: 10px 0
 
 // Tech skills sections & // Soft skills section
 
@@ -107,59 +115,61 @@ h4
     margin-top: 0px
     // margin-bottom: 45px
 
-.d1
-    position: absolute
-    margin-top: 0
-    width: 100%
-    height: 20px
-    background-color: $sidebar-bg
+// .d1
+//     position: absolute
+//     margin-top: 0
+//     width: 100%
+//     height: 20px
+//     background-color: $sidebar-bg
 
-.d2
-    position: absolute
-    margin-top: 20px
-    width: 100%
-    height: 80px
-    background-color: $title-bg-col2
+// .d2
+//     position: absolute
+//     margin-top: 20px
+//     width: 100%
+//     height: 80px
+//     background-color: $title-bg-col2
 
 
-.d3
-    position: absolute
-    margin-top: 100px
-    width: 100%
-    height: 50px
-    background-color: $title-bg-col3
+// .d3
+//     position: absolute
+//     margin-top: 100px
+//     width: 100%
+//     height: 50px
+//     background-color: $title-bg-col3
 
 /* About me */
 
 .about-me-section
     // display: grid
     // grid-template-rows: 1.4fr 1fr 3fr
-    margin-top: 20px
+    margin-top: 10px
     position: relative
 .about-me
         font-style: normal
         font-weight: bold
         &-name
+            margin: 0
             position: relative
             color: $text-black
             text-align: center
             justify-content: center
             font-size: 35px
-            line-height: 80px
-            background-color: $title-bg-col2
+            line-height: 60px
+            // background-color: $title-bg-col2
         &-prof
-            background-color: $title-bg-col3
+            margin: 0
+            // background-color: $title-bg-col3
             position: relative
-            color: $sidebar-bg
+            color: $title-bg-col2
             text-align: center
             // justify-content: center
             font-size: 20px
-            line-height: 50px
+            line-height: 30px
             // margin-top: 27px
             // margin-bottom: 20px
         &-description
             // padding: 5px 0 10px 0
-            margin: 10px 40px
+            margin: 15px 40px
             text-align: justify
             font-style: normal
             font-weight: normal
@@ -180,6 +190,8 @@ h4
 //     margin-left: -6%
 //     margin-top: -60px
 
+
+
 /* My projects */  
 
 .my-project-section
@@ -192,14 +204,14 @@ h4
         font-weight: bold
         padding: 0
     &-item
-        margin: 10px
+        margin: 5px 0 
         // padding: 5px
         color: $text-black
         font-weight: bold
-        ::marker
+        &::marker
             padding: 0
     &-text
-        // margin: 10px
+        margin: 10px
         color: $col-gr-59
         font-style: normal
         font-weight: normal
@@ -217,18 +229,20 @@ h4
         font-style: normal
         font-weight: bold
 
+    
 /* My work experience */
 
 .my-work-experience
-    margin: 0
+    margin-top: 
     &-section
-        margin: 0 40px
+        margin: 10px 0 0 40px 
     &-company-block
     &-position
-
+        
         color: $text-black
     &-company
-        color: $orange
+        margin-left: 10px
+        color: $title-bg-col2
         font-weight: bold
     &-period
         font-size: 12px
@@ -242,6 +256,9 @@ h4
         color: $col-gr-59
         font-size: 16px
         line-height: 24px
+        &::marker
+            color: $title-bg-col2
+
 
 /* My education */
 
@@ -260,9 +277,11 @@ h4
         font-weight: bold
         font-size: 18px
         line-height: 20px
-        color: $orange
+        margin-top: 10px
+        color: $title-bg-col2
         // margin: 20px 5px 5px 5px
     &-prof
+        margin-top: 5px
         color: $text-black
         font-style: normal
         font-weight: bold
@@ -270,6 +289,7 @@ h4
         line-height: 17px
         // margin: 5px
     &-time
+        margin-top: 10px
         font-size: 12px
         color: $text-grey
         // margin: 5px
@@ -279,7 +299,7 @@ h4
         display: grid
         // grid-template-columns: 1fr 1fr
         grid-template-areas: "my-education-block-one" "my-education-block-two"
-        text-align: center
+        text-align: left
         margin: 0
         padding: 0
         &-one
